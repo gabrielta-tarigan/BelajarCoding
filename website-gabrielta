@@ -1,1 +1,160 @@
-jdjsj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar Coding</title>
+</head>
+<body>
+  <p>Pilih video musik (hanya suaranya yang diputar):</p>
+
+  <!-- Input untuk pilih file -->
+  <input type="file" id="videoInput" accept="video/*">
+
+  <!-- Pemutar audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <script>
+    const input = document.getElementById('videoInput');
+    const player = document.getElementById('audioPlayer');
+
+    input.addEventListener('change', function() {
+      const file = this.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        player.src = url;
+        player.play();
+      }
+    });
+  </script>
+  <h1>Belajar Coding dari Nol</h1>
+
+  <h3>Langkah-langkah Coding:</h3>
+  <ol>
+    <li>Pilih bahasa pemrograman yang ingin dikuasai</li>
+    <li>Kumpulkan teori</li>
+    <li>Praktek</li>
+  </ol>
+
+  <h4>Berikut teori coding yang saya sampaikan</h4>
+
+  <h3>Pengertian Coding</h3>
+  <p>
+    Coding, atau pemrograman komputer, adalah proses menulis instruksi-instruksi 
+    yang dapat dipahami oleh komputer untuk melakukan tugas-tugas tertentu. 
+    Coding melibatkan penulisan kode dalam bahasa pemrograman tertentu, seperti 
+    Python, Java, atau C++, untuk membuat program, aplikasi, atau sistem yang 
+    dapat berjalan di komputer atau perangkat lainnya.
+  </p>
+
+  <p>Coding dapat digunakan untuk berbagai tujuan, seperti:</p>
+  <ul>
+    <li>Membuat aplikasi mobile atau web</li>
+    <li>Mengembangkan game</li>
+    <li>Menganalisis data</li>
+    <li>Membuat sistem otomatisasi</li>
+    <li>Dan banyak lagi!</li>
+  </ul>
+
+  <p>Dengan coding, kamu dapat menciptakan sesuatu yang baru dan berguna, serta memecahkan masalah-masalah yang kompleks.</p>
+
+  <h4>Berikut bahasa pemrograman yang akan saya bahas</h4>
+
+  <h3>HTML</h3>
+  <p>
+    HTML atau (Hyper Text Markup Language) adalah bahasa markup, bukan bahasa pemrograman. 
+    HTML sangat populer dalam pembuatan website, karena HTML sangat mudah sekali. 
+    Tetapi HTML saja tidak cukup, melainkan harus dikombinasikan dengan bahasa lain seperti: 
+    <b>CSS</b> (untuk membuat tampilan website lebih menarik) dan 
+    <b>JavaScript</b> (untuk membuat fitur berfungsi).
+  </p>
+
+  <h3>Struktur Dasar HTML</h3>
+  <ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code> : Mendeklarasikan dokumen sebagai HTML5.</li>
+    <li><code>&lt;html lang="en"&gt;</code> : Elemen root dari halaman HTML. <code>lang="en"</code> menentukan bahasa halaman.</li>
+    <li><code>&lt;head&gt;</code> : Berisi meta-data tentang dokumen, seperti:
+      <ul>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code> : Menentukan encoding karakter (UTF-8).</li>
+        <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> : Untuk tampilan responsif.</li>
+        <li><code>&lt;title&gt;Judul Halaman&lt;/title&gt;</code> : Menentukan judul halaman di tab browser.</li>
+      </ul>
+    </li>
+    <li><code>&lt;body&gt;</code> : Berisi konten utama halaman yang akan ditampilkan kepada pengguna.</li>
+    <li><code>&lt;h1&gt;Judul Utama&lt;/h1&gt;</code> : Contoh heading level 1.</li>
+    <li><code>&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;</code> : Contoh paragraf.</li>
+  </ul>
+
+  <h3>CSS</h3>
+  <p>
+    CSS adalah singkatan dari <b>Cascading Style Sheets</b>, yaitu bahasa yang digunakan 
+    untuk mengatur tampilan dan gaya dari elemen-elemen HTML.
+  </p>
+  <p>
+    Kalau HTML berfungsi sebagai struktur (seperti tulang dan isi), maka CSS berfungsi 
+    sebagai desain (warna, tata letak, font, jarak, animasi, dan lain-lain).
+  </p>
+
+  <h4>Fungsi utama CSS:</h4>
+  <ol>
+    <li>Mengatur tampilan → warna, ukuran teks, font, background.</li>
+    <li>Mengatur layout → posisi elemen agar rapi.</li>
+    <li>Membuat halaman responsif → menyesuaikan di layar HP, tablet, komputer.</li>
+    <li>Membedakan konten dan desain → HTML untuk isi, CSS untuk gaya.</li>
+    <li>Efisiensi → cukup tulis aturan CSS sekali, bisa dipakai berulang.</li>
+    <li>JavaScript = otak dan otot (fungsi & interaksi)</li>
+  </ol>
+  <h3>JAVASCRIPT</h3>
+  <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat sebuah halaman website menjadi interaktif dan dinamis.</p>
+  <p>Kalau HTML itu ibaratnya kerangka (struktur) sebuah rumah, CSS adalah cat dan dekorasinya (tampilan), maka JavaScript adalah listrik dan mesin yang membuat rumah itu bisa “hidup” (ada pintu otomatis, lampu nyala, dll).
+</p>
+<h4>Fungsi utama JavaScript:</h4>
+<ol>
+  <li>Menambahkan interaktivitas → contoh: tombol bisa diklik lalu muncul pesan.</li>
+  <li>Mengubah konten secara dinamis → teks, gambar, atau warna bisa berubah tanpa harus reload halaman.</li>
+  <li>Membuat animasi sederhana → misalnya gambar bergerak atau efek transisi.</li>
+  <li>Menghubungkan ke server (backend) → lewat AJAX atau fetch API untuk mengambil data tanpa reload halaman.</li>
+  <li>Digunakan juga untuk membuat aplikasi dan game berbasis web.</li>
+</ol>
+<h4>Beli mentor? Disini aja👇</h4>
+<a href="https://wa.me/6285167831985">Nomor mentor</a>
+<h4>Tiktok Saya👇</h4>
+<a href="https://www.tiktok.com/@mamatigan_bre_nangin?_t=ZS-8yzNhtyrsiS&_r=1">GabrielTa| Tecnologi</a>
+<p>Buku untuk masa Depan👇</p>
+<a href="https://vt.tokopedia.com/t/ZSALkCo41/">Buku belajar HTML, CSS, dan JavaScript</a>
+<a href="https://vt.tokopedia.com/t/ZSALBBSEG/">Belajar python</a>
+<br>
+<a href="https://vt.tokopedia.com/t/ZSALBh6kg/">Belajar PHP</a>
+<br>
+<a href="https://vt.tokopedia.com/t/ZSALBebwD/">Machine learning</a>
+<h1>Tentang Saya</h1>
+<p>Website ini dibuat untuk membantu pemula belajar coding dari nol. Semua artikel ditulis dengan bahasa sederhana agar mudah dipahami. saya percaya bahwa siapa pun bisa belajar teknologi.</p>
+<h3>
+  📱Whatsapp: 
+  <a href="https://wa.me/6285167831985" target="_blank">
+    085167831985
+  </a>
+ <h1>Privacy Policy</h1>
+<p>
+Website ini menggunakan cookie untuk meningkatkan pengalaman pengguna. 
+Google, sebagai pihak ketiga, menggunakan cookie untuk menayangkan iklan di situs ini. 
+Pengguna dapat menonaktifkan cookie dengan mengatur browser masing-masing.
+</p>
+
+<p>
+Iklan yang ditampilkan di website ini mungkin menggunakan teknologi seperti cookie atau web beacon 
+yang akan mengirimkan informasi (seperti alamat IP) kepada pengiklan. 
+Google AdSense sebagai mitra iklan kami menggunakan cookie DART 
+untuk menayangkan iklan kepada pengguna berdasarkan kunjungan mereka ke situs ini dan situs lainnya.
+</p>
+
+<p>
+Dengan mengakses website ini, Anda setuju terhadap penggunaan cookie dan kebijakan privasi ini.
+</p>
+<h1>Disclaimer</h1>
+  <p>Halaman ini menjelaskan bahwa isi website hanya untuk informasi, bukan jaminan 100% benar atau saran resmi.Tujuannya melindungi pemilik website dari tanggung jawab hukum.</p>
+</h3>
+<center><h5>Terima Kasih</h5></center>
+</body>
+</html>
